@@ -124,42 +124,52 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 20
     },
-    loading: { flex: 1, justifyContent: 'center' },
+    loading: { flex: 1, justifyContent: 'center', alignItems: 'center' },
     
     contentBox: {
-        padding: 30,
-        borderRadius: 12,
-        borderWidth: 1,
+        padding: 32,
+        borderRadius: 14,
+        borderWidth: 1.5,
         width: '100%', 
-        maxWidth: 400, 
+        maxWidth: 380,
         alignItems: 'center',
-        // Assuming theme.fonts.heading caused the 'text node' error, using a fixed size here.
+        elevation: 4,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.15,
+        shadowRadius: 4,
     },
 
     warningText: {
-        fontSize: 18, 
-        fontWeight: 'bold',
+        fontSize: 16, 
+        fontWeight: '700',
         textAlign: 'center',
-        marginBottom: 10,
+        marginBottom: 14,
+        letterSpacing: 0.3,
     },
     itemIdText: {
         textAlign: 'center',
-        marginBottom: 30,
+        marginBottom: 32,
         fontSize: 16,
+        fontWeight: '600',
     },
 
     actionButton: {
         width: '100%',
-        padding: 12, 
+        padding: 14,
         borderRadius: 8,
         alignItems: 'center',
-        marginTop: 15,
-        // Removed Platform.select for web cursor/boxShadow to keep it clean, assume basic RN support.
+        marginTop: 12,
+        elevation: 2,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
     },
     buttonText: {
         color: '#fff',
-        fontWeight: 'bold',
-        fontSize: 16,
+        fontWeight: '600',
+        fontSize: 15,
     },
     deleteButton: {
         backgroundColor: '#DC3545', 

@@ -42,7 +42,7 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
     safeArea: {
         flex: 1,
-        backgroundColor: '#f8f8f8', 
+        backgroundColor: '#f8f9fa', 
     },
     container: {
         flex: 1,
@@ -50,15 +50,21 @@ const styles = StyleSheet.create({
     },
     logoutButton: {
         width: '100%',
-        padding: 15,
-        backgroundColor: '#dc3545', // Red color for danger/logout
-        borderRadius: 0, // Making it full width at the bottom
+        padding: 16,
+        backgroundColor: '#dc3545',
+        borderRadius: 0,
         alignItems: 'center',
+        elevation: 4,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: -2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
     },
     logoutButtonText: {
         color: '#fff',
         fontSize: 16,
-        fontWeight: 'bold',
+        fontWeight: '600',
+        letterSpacing: 0.3,
     },
 });
 

@@ -131,39 +131,50 @@ const styles = StyleSheet.create({
         padding: 20,
     },
     title: {
-        fontSize: 32, // Larger title size
-        fontWeight: 'bold',
-        marginBottom: 30, // Reduced margin
+        fontSize: 28,
+        fontWeight: '700',
+        marginBottom: 40,
+        letterSpacing: 0.5,
     },
     input: {
         width: '100%',
-        maxWidth: 300, // Matches LoginScreen's width constraint
-        padding: 15,
-        borderWidth: 1,
-        borderRadius: 8,
-        marginBottom: 15,
+        maxWidth: 320,
+        padding: 14,
+        borderWidth: 1.5,
+        borderRadius: 10,
+        marginBottom: 12,
         fontSize: 16,
+        fontWeight: '500',
     },
     button: {
         width: '100%',
-        maxWidth: 300, // Matches LoginScreen's width constraint
-        padding: 15,
-        borderRadius: 8,
+        maxWidth: 320,
+        padding: 14,
+        borderRadius: 10,
         alignItems: 'center',
-        marginBottom: 10,
+        marginBottom: 12,
+        elevation: 3,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3,
     },
     buttonText: {
         color: '#fff',
-        fontSize: 18,
-        fontWeight: 'bold',
+        fontSize: 16,
+        fontWeight: '600',
     },
     errorText: {
         marginBottom: 15,
         textAlign: 'center',
         fontWeight: '600',
+        fontSize: 14,
     },
-    registerText: { // Replaced loginContainer/loginText/loginLink with a single TouchableOpacity/Text based on LoginScreen
+    registerText: {
         marginTop: 15,
+        fontSize: 14,
+        textAlign: 'center',
+        fontWeight: '500',
     },
 });
 

@@ -16,8 +16,8 @@ const baseTheme = {
 
     // FONT SIZES (Defined relative to BASE_REM for scaling)
     fonts: {
-        title: 1.5 * BASE_REM, // 24px (e.g., + button)
-        heading: 1.125 * BASE_REM, // 18px (e.g., List item title)
+        title: 1.75 * BASE_REM, // 28px (Large titles)
+        heading: 1.125 * BASE_REM, // 18px (List item title)
         body: BASE_REM, // 16px (Standard text)
         small: 0.875 * BASE_REM, // 14px (Details text)
     },

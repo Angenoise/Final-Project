@@ -293,63 +293,71 @@ const MediaEdit = ({ route, navigation }) => {
 };
 
 const styles = StyleSheet.create({
-    container: { flex: 1, padding: 15 }, 
-    loading: { flex: 1, justifyContent: 'center' },
+    container: { flex: 1, padding: 16 },
+    loading: { flex: 1, justifyContent: 'center', alignItems: 'center' },
     form: { 
         width: '100%', 
-        maxWidth: 350, 
+        maxWidth: 360,
         alignSelf: 'center', 
-        marginTop: 5 
+        marginTop: 12
     },
     cardShadow: Platform.select({
-        ios: { shadowColor: "#000", shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 4 },
-        android: { elevation: 3 },
-        default: { boxShadow: '0 1px 3px rgba(0,0,0,0.1)' } 
+        ios: { shadowColor: "#000", shadowOffset: { width: 0, height: 3 }, shadowOpacity: 0.15, shadowRadius: 4 },
+        android: { elevation: 4 },
+        default: { boxShadow: '0 2px 6px rgba(0,0,0,0.12)' } 
     }),
-    label: { fontWeight: '600', marginTop: 8, marginBottom: 2 }, 
+    label: { fontWeight: '600', marginTop: 14, marginBottom: 6, fontSize: 14 }, 
     input: {
-        borderRadius: 4, 
-        borderWidth: 1,
-        marginBottom: 6, 
-        height: 30, 
-        paddingHorizontal: 8,
+        borderRadius: 8,
+        borderWidth: 1.5,
+        marginBottom: 14,
+        height: 44,
+        paddingHorizontal: 12,
+        fontSize: 15,
     },
     pickerWrapper: {
-        borderRadius: 4, 
-        borderWidth: 1,
+        borderRadius: 8,
+        borderWidth: 1.5,
         overflow: 'hidden', 
-        marginBottom: 6, 
-        height: 30, 
+        marginBottom: 14,
+        height: 44,
     },
     pickerStyle: {
         width: '100%',
-        height: 30, 
+        height: 44,
     },
     actionButton: {
         alignItems: 'center',
-        marginTop: 8, 
-        ...Platform.select({
-            default: { cursor: 'pointer' },
-        }),
+        marginTop: 14,
+        paddingVertical: 12,
+        borderRadius: 8,
+        elevation: 2,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
     },
     buttonText: {
         color: '#fff',
-        fontWeight: 'bold',
+        fontWeight: '600',
+        fontSize: 15,
     },
     favoriteButton: {
-        padding: 6, 
-        borderRadius: 15, 
+        padding: 10,
+        borderRadius: 8,
         alignItems: 'center',
-        marginBottom: 10, 
-        borderWidth: 1,
+        marginBottom: 14,
+        borderWidth: 1.5,
+        minHeight: 44,
+        justifyContent: 'center',
     },
     favoriteActive: {
         backgroundColor: '#FFC107', 
         borderColor: '#FFC107',
     },
     favoriteButtonText: {
-        fontWeight: 'bold',
-    },
+        fontWeight: '600',
+        fontSize: 14,
     finishedButton: {
         backgroundColor: '#007BFF', 
     },
